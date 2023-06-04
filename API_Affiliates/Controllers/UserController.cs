@@ -8,7 +8,7 @@ namespace API_Affiliates.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [EnableCors("hola")]
+    [EnableCors("AllowOrigins")]
     public class UserController : ControllerBase
     {
         private readonly IAuthService _authService;

@@ -17,4 +17,9 @@
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.30.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+    <Folder Include="Properties\PublishProfiles\" />
+  </ItemGroup>
+
 </Project>

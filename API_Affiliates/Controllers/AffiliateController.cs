@@ -10,7 +10,7 @@ namespace API_Affiliates.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [EnableCors("hola")]
+    [EnableCors("AllowOrigins")]
     public class AffiliateController : ControllerBase
     {
         private readonly IAffiliateService _service;
@@ -20,7 +20,7 @@ namespace API_Affiliates.Controllers
         }
 
         // GET: api/<AffiliateController>
-        [Authorize]
+        //[Authorize]
         [HttpGet]
         public IEnumerable<Affiliate> Get()
         {
@@ -29,9 +29,12 @@ namespace API_Affiliates.Controllers
 
         // GET api/<AffiliateController>/5
         [HttpGet("{DNI}")]
-        public Affiliate Get(string DNI)
+        public IActionResult Get(string DNI)
         {
-            return _service.GetAffiliate(DNI);
+            var result = _service.GetAffiliate(DNI);
+            if (result == null) return NotFound();
+
+            return Ok(result);
         }
 
         // POST api/<AffiliateController>

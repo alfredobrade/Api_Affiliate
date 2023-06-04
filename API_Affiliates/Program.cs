@@ -1,7 +1,9 @@
 
+using API_Affiliates.Settings;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
-//var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
 
 using API_Affiliates.ServiceInterfaces;
 using API_Affiliates.Services;
@@ -11,11 +13,15 @@ using API_Affiliates.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+var corsSettings = builder.Configuration.GetSection("CorsSettings").Get<CorsSettings>();
+builder.Services.Configure<CorsSettings>(builder.Configuration.GetSection("CorsSettings"));
+
 
 builder.Services.AddCors(options => {
-    options.AddPolicy("hola",
+    options.AddPolicy("AllowOrigins",
     policy => {
-        policy.WithOrigins("http://127.0.0.1:5500")
+        policy.WithOrigins(corsSettings.AllowedOrigins)
         .AllowAnyHeader().AllowAnyMethod();
     });
 });
@@ -70,7 +76,7 @@ if (app.Environment.IsDevelopment())
 }
 
 //adding CORS
-app.UseCors("hola");
+app.UseCors("AllowOrigins");
 
 app.UseHttpsRedirection();
 
