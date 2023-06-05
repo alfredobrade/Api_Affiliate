@@ -3,3 +3,5 @@
 /API_Affiliates/Migrations/20230603163332_initDb.cs
 /API_Affiliates/Migrations/ProjectDbContextModelSnapshot.cs
 /API_Affiliates/Migrations/
+/API_Affiliates/Properties/PublishProfiles/FTPProfile.pubxml
+/API_Affiliates/appsettings.Development.json
