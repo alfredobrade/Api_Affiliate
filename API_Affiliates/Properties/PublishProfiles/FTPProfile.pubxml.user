@@ -8,7 +8,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <EncryptedPassword>
     </EncryptedPassword>
     <_PublishTargetUrl>ftp://155.254.244.37/www.yakatec-apitesting.somee.com</_PublishTargetUrl>
-    <History>True|2023-06-04T20:01:10.5998505Z;False|2023-06-04T16:55:40.9577884-03:00;</History>
+    <History>True|2023-06-05T00:17:51.6561254Z;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -23,16 +23,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
   </ItemGroup>
   <ItemGroup>
     <File Include="API_Affiliates.deps.json">
-      <publishTime>06/04/2023 16:57:06</publishTime>
+      <publishTime>06/04/2023 21:13:43</publishTime>
     </File>
     <File Include="API_Affiliates.dll">
-      <publishTime>06/04/2023 16:57:05</publishTime>
+      <publishTime>06/04/2023 21:08:31</publishTime>
     </File>
     <File Include="API_Affiliates.exe">
-      <publishTime>06/04/2023 16:57:05</publishTime>
+      <publishTime>06/04/2023 21:08:31</publishTime>
     </File>
     <File Include="API_Affiliates.pdb">
-      <publishTime>06/04/2023 16:57:05</publishTime>
+      <publishTime>06/04/2023 21:08:31</publishTime>
     </File>
     <File Include="API_Affiliates.runtimeconfig.json">
       <publishTime>06/03/2023 22:48:32</publishTime>
@@ -41,10 +41,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>06/03/2023 10:18:16</publishTime>
     </File>
     <File Include="appsettings.json">
-      <publishTime>06/04/2023 16:44:20</publishTime>
+      <publishTime>06/04/2023 20:49:07</publishTime>
     </File>
     <File Include="appsettings.production.json">
-      <publishTime>06/04/2023 16:57:06</publishTime>
+      <publishTime>06/04/2023 21:13:43</publishTime>
     </File>
     <File Include="Azure.Core.dll">
       <publishTime>04/04/2022 18:38:56</publishTime>
@@ -212,7 +212,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/19/2020 15:53:38</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>06/04/2023 16:57:06</publishTime>
+      <publishTime>06/04/2023 21:13:43</publishTime>
     </File>
   </ItemGroup>
 </Project>

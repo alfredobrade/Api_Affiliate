@@ -20,7 +20,7 @@ namespace API_Affiliates.Controllers
         }
 
         // GET: api/<AffiliateController>
-        //[Authorize]
+        [Authorize]
         [HttpGet]
         public IEnumerable<Affiliate> Get()
         {
