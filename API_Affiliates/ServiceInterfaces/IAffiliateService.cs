@@ -4,10 +4,10 @@ namespace API_Affiliates.ServiceInterfaces
 {
     public interface IAffiliateService
     {
-        public IEnumerable<Affiliate> GetListAffiliate();
-        public Affiliate GetAffiliate(string dni);
-        public Task Save(Affiliate affiliate);
-        public Task Update(Affiliate affiliate);
-        public Task Delete(string dni);
+        Task<IEnumerable<Affiliate>> GetListAffiliate();
+        Task<Affiliate> GetAffiliate(string dni);
+        Task<bool> Save(Affiliate affiliate);
+        Task<bool> Update(Affiliate affiliate);
+        Task<bool> Delete(string dni);
     }
 }

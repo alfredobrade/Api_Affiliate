@@ -1,6 +1,8 @@
 ﻿using API_Affiliates.Models;
 using API_Affiliates.Repository;
 using API_Affiliates.ServiceInterfaces;
+using Microsoft.EntityFrameworkCore;
+using System.Reflection.Metadata;
 
 namespace API_Affiliates.Services
 {
@@ -12,29 +14,53 @@ namespace API_Affiliates.Services
         {
             _context = context;
         }
-        public Task Delete(string dni)
+        public async Task<bool> Delete(string dni)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var model = await _context.Affiliates.Where(p => p.DNI == dni).FirstOrDefaultAsync();
+                _context.Affiliates.Remove(model);
+
+                return true;
+            }
+            catch (Exception ex) { throw new Exception(); }
+
         }
 
-        public Affiliate GetAffiliate(string dni)
+        public async Task<Affiliate> GetAffiliate(string dni)
         {
-            // es asincronico? debo sacar async task de la definicion?
-            var affiliate = _context.Affiliates.Where(x => x.DNI == dni).FirstOrDefault(); 
-            return affiliate;
+            try
+            {
+                var affiliate = await _context.Affiliates.Where(x => x.DNI == dni).FirstOrDefaultAsync();
+                return affiliate;
+            }
+            catch (Exception ex) { throw new Exception(); }
+
         }
 
-        public IEnumerable<Affiliate> GetListAffiliate()
+        public async Task<IEnumerable<Affiliate>> GetListAffiliate()
         {
-            return _context.Affiliates;
+            try
+            {
+                var list = await _context.Affiliates.ToListAsync();
+                return list;
+            }
+            catch (Exception ex) { throw new Exception(); }
+
         }
 
-        public Task Save(Affiliate affiliate)
+        public async Task<bool> Save(Affiliate affiliate)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _context.Add(affiliate);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex) { throw new Exception(); }
         }
-
-        public Task Update(Affiliate affiliate)
+        //TODO:
+        public async Task<bool> Update(Affiliate affiliate)
         {
             throw new NotImplementedException();
         }
