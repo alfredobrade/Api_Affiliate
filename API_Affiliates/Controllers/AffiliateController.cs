@@ -5,11 +5,10 @@ using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace API_Affiliates.Controllers
 {
-    [Route("api/[controller]/[action]")]
+    [Route("api/[controller]")]
     [ApiController]
     [EnableCors("AllowOrigins")]
     public class AffiliateController : ControllerBase
@@ -37,7 +36,7 @@ namespace API_Affiliates.Controllers
 
         // GET api/<AffiliateController>/5
         [HttpGet("{DNI}")]
-        public async Task<IActionResult> Get([FromRoute] string DNI)
+        public async Task<IActionResult> GetAffiliate([FromRoute] string DNI)
         {
             try
             {

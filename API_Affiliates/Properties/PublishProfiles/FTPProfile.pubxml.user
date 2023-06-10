@@ -5,10 +5,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>
-    </EncryptedPassword>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAf4BoaPezAkywBtYULHkAcgAAAAACAAAAAAAQZgAAAAEAACAAAAAEa2dWACI3U3BF9vojopFulbEWnnw1iqdprLOCcuUvYAAAAAAOgAAAAAIAACAAAADP0DPBGO+3FfWV9OT+3VPOZ1mZDpU8Rd3lQoSaStjVGTAAAAC0eZWPG6BLgsIl2g8bGCzPpSAhWy6M9HW3bdoRIdpUtXbNbnIPIwCUmgbhAkl6dc9AAAAAY5fvDLcpXtIEQzdAmSOFbW9zXaSyWZSkToSWUdmSNF79UHyaf2jfZ8O9Ay8EPk3W3FiuC6eGsc64xCymSk1Igg==</EncryptedPassword>
     <_PublishTargetUrl>ftp://155.254.244.37/www.yakatec-apitesting.somee.com</_PublishTargetUrl>
-    <History>True|2023-06-05T00:17:51.6561254Z;</History>
+    <History>True|2023-06-10T19:50:18.1221336Z;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -23,16 +22,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
   </ItemGroup>
   <ItemGroup>
     <File Include="API_Affiliates.deps.json">
-      <publishTime>06/04/2023 21:13:43</publishTime>
+      <publishTime>06/10/2023 16:44:38</publishTime>
     </File>
     <File Include="API_Affiliates.dll">
-      <publishTime>06/04/2023 21:08:31</publishTime>
+      <publishTime>06/10/2023 16:44:31</publishTime>
     </File>
     <File Include="API_Affiliates.exe">
-      <publishTime>06/04/2023 21:08:31</publishTime>
+      <publishTime>06/10/2023 16:44:32</publishTime>
     </File>
     <File Include="API_Affiliates.pdb">
-      <publishTime>06/04/2023 21:08:31</publishTime>
+      <publishTime>06/10/2023 16:44:31</publishTime>
     </File>
     <File Include="API_Affiliates.runtimeconfig.json">
       <publishTime>06/03/2023 22:48:32</publishTime>
@@ -41,10 +40,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>06/03/2023 10:18:16</publishTime>
     </File>
     <File Include="appsettings.json">
-      <publishTime>06/04/2023 20:49:07</publishTime>
+      <publishTime>06/10/2023 16:28:19</publishTime>
     </File>
     <File Include="appsettings.production.json">
-      <publishTime>06/04/2023 21:13:43</publishTime>
+      <publishTime>06/10/2023 16:44:39</publishTime>
     </File>
     <File Include="Azure.Core.dll">
       <publishTime>04/04/2022 18:38:56</publishTime>
@@ -212,7 +211,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/19/2020 15:53:38</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>06/04/2023 21:13:43</publishTime>
+      <publishTime>06/10/2023 16:44:39</publishTime>
     </File>
   </ItemGroup>
 </Project>
