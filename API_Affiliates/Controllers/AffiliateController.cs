@@ -19,7 +19,6 @@ namespace API_Affiliates.Controllers
             _service = service;
         }
 
-        // GET: api/<AffiliateController>
         [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetList()
@@ -34,7 +33,6 @@ namespace API_Affiliates.Controllers
 
         }
 
-        // GET api/<AffiliateController>/5
         [HttpGet("{DNI}")]
         public async Task<IActionResult> GetAffiliate([FromRoute] string DNI)
         {
@@ -49,7 +47,6 @@ namespace API_Affiliates.Controllers
 
         }
 
-        // POST api/<AffiliateController>
         [Authorize]
         [HttpPost]
         public async Task<IActionResult> AddNew([FromBody] Affiliate model)
@@ -58,19 +55,20 @@ namespace API_Affiliates.Controllers
             {
                 if (model == null) return BadRequest();
                 var result = await _service.Save(model);
+
                 return Ok(result);
             }
             catch (Exception ex) { throw new Exception(); }
 
         }
 
-        // PUT api/<AffiliateController>/5
         [Authorize]
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] Affiliate model)
+        public async Task<IActionResult> Update([FromRoute] int id, [FromBody] Affiliate model)
         {
             try
             {
+                if (id == 0 || id != model.Id) return BadRequest();
                 if (model == null) return BadRequest();
                 var result = await _service.Update(model);
                 return Ok(result);
@@ -78,7 +76,6 @@ namespace API_Affiliates.Controllers
             catch (Exception ex) { throw new Exception(); }
         }
 
-        // DELETE api/<AffiliateController>/5
         [Authorize]
         [HttpDelete("{DNI}")]
         public async Task<IActionResult> Delete([FromRoute] string DNI)

@@ -18,8 +18,9 @@ namespace API_Affiliates.Services
         {
             try
             {
-                var model = await _context.Affiliates.Where(p => p.DNI == dni).FirstOrDefaultAsync();
+                var model = _context.Affiliates.Where(p => p.DNI == dni).FirstOrDefault();
                 _context.Affiliates.Remove(model);
+                await _context.SaveChangesAsync();
 
                 return true;
             }
@@ -59,10 +60,15 @@ namespace API_Affiliates.Services
             }
             catch (Exception ex) { throw new Exception(); }
         }
-        //TODO:
+        
         public async Task<bool> Update(Affiliate affiliate)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _context.Update(affiliate);
+                await _context.SaveChangesAsync();
+                return true;
+            }catch(Exception ex) { throw new Exception(); }
         }
     }
 }
