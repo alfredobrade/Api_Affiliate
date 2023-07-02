@@ -54,11 +54,17 @@ namespace API_Affiliates.Services
         {
             try
             {
+                var exist = _context.Affiliates.Any(x => x.DNI.Trim() == affiliate.DNI.Trim());
+                if (exist)
+                {
+                    return false;
+                }
+
                 _context.Add(affiliate);
                 await _context.SaveChangesAsync();
-                return true;
+                return true; 
             }
-            catch (Exception ex) { throw new Exception(); }
+            catch (Exception) { throw; }
         }
         
         public async Task<bool> Update(Affiliate affiliate)

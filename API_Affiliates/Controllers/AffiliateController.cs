@@ -54,11 +54,12 @@ namespace API_Affiliates.Controllers
             try
             {
                 if (model == null) return BadRequest();
+
                 var result = await _service.Save(model);
 
                 return Ok(result);
             }
-            catch (Exception ex) { throw new Exception(); }
+            catch (Exception) { throw; }
 
         }
 
