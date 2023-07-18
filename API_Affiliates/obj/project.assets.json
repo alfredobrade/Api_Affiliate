@@ -3776,11 +3776,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\corre\\source\\repos\\app-affiliates\\API\\API_Affiliates\\API_Affiliates\\API_Affiliates.csproj",
+      "projectUniqueName": "C:\\Users\\corre\\OneDrive\\ReposNube\\app-affiliates\\API\\API_Affiliates\\API_Affiliates\\API_Affiliates.csproj",
       "projectName": "API_Affiliates",
-      "projectPath": "C:\\Users\\corre\\source\\repos\\app-affiliates\\API\\API_Affiliates\\API_Affiliates\\API_Affiliates.csproj",
+      "projectPath": "C:\\Users\\corre\\OneDrive\\ReposNube\\app-affiliates\\API\\API_Affiliates\\API_Affiliates\\API_Affiliates.csproj",
       "packagesPath": "C:\\Users\\corre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\corre\\source\\repos\\app-affiliates\\API\\API_Affiliates\\API_Affiliates\\obj\\",
+      "outputPath": "C:\\Users\\corre\\OneDrive\\ReposNube\\app-affiliates\\API\\API_Affiliates\\API_Affiliates\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\corre\\AppData\\Roaming\\NuGet\\NuGet.Config",

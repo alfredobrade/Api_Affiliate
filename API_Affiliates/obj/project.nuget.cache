@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z6AcQWOZM3787oGN/hkEqJHHmvs81b80OuBXHNl6h4+Lf8OWCC8Jzaig272AfMaJYxNXu0x2m/K/wlcEGUasMw==",
+  "dgSpecHash": "OHsSBK7eg3B/nktSAJ1cm+ISkj0VNGSgt5iKcCspWeH3f2+Q672XxPSgkqtaHjqcV1/q43pC1UYDYAy8PkG6vw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\corre\\source\\repos\\app-affiliates\\API\\API_Affiliates\\API_Affiliates\\API_Affiliates.csproj",
+  "projectFilePath": "C:\\Users\\corre\\OneDrive\\ReposNube\\app-affiliates\\API\\API_Affiliates\\API_Affiliates\\API_Affiliates.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\corre\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\corre\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
