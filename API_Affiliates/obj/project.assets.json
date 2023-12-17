@@ -3771,19 +3771,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\corre\\.nuget\\packages\\": {}
+    "C:\\Users\\alfre\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\corre\\OneDrive\\ReposNube\\app-affiliates\\API\\API_Affiliates\\API_Affiliates\\API_Affiliates.csproj",
+      "projectUniqueName": "C:\\Users\\alfre\\source\\repos\\API_Affiliates\\API_Affiliates\\API_Affiliates.csproj",
       "projectName": "API_Affiliates",
-      "projectPath": "C:\\Users\\corre\\OneDrive\\ReposNube\\app-affiliates\\API\\API_Affiliates\\API_Affiliates\\API_Affiliates.csproj",
-      "packagesPath": "C:\\Users\\corre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\corre\\OneDrive\\ReposNube\\app-affiliates\\API\\API_Affiliates\\API_Affiliates\\obj\\",
+      "projectPath": "C:\\Users\\alfre\\source\\repos\\API_Affiliates\\API_Affiliates\\API_Affiliates.csproj",
+      "packagesPath": "C:\\Users\\alfre\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alfre\\source\\repos\\API_Affiliates\\API_Affiliates\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\corre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alfre\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3791,7 +3791,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3852,7 +3851,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
