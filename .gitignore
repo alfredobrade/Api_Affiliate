@@ -1,9 +1,7 @@
 /API_Affiliates/appsettings.json
 /API_Affiliates/appsettings.development.json
-/API_Affiliates/Migrations/20230603163332_initDb.cs
-/API_Affiliates/Migrations/ProjectDbContextModelSnapshot.cs
-/API_Affiliates/Migrations/
 /API_Affiliates/Properties/PublishProfiles/
 /API_Affiliates/appsettings.Development.json
 /API_Affiliates/bin
 /API_Affiliates/obj
+/.vs/API_Affiliates/FileContentIndex/7cb5ddbd-8683-46cf-8836-71df441189d9.vsidx
